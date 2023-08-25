@@ -1,0 +1,30 @@
+.hero {
+    display: flex;
+    align-items: center;
+    background: linear-gradient( #00eeff, #00aeff, #797979 , #797979);
+    padding: 50px;
+    color: white;
+  }
+  
+  .hero-image {
+    width: 650px; /* Ajusta el tamaño de la imagen */
+    height: 400px; /* Ajusta el tamaño de la imagen */
+    background-image: url('../Imgs/Hero.png'); /* Cambia la ruta por tu imagen */
+    background-size: cover;
+    background-position: center;
+    margin-right: 100px; /* Añadido para separar la imagen del texto */
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+  

@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #EDEDED;
+  color: #333333;
+  background: linear-gradient(to left, #666666, #5236f1);
+}
+
+section {
+  margin-left: 18rem;
+  margin-right: 18rem;
+}
+
+.titulo {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+.cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  padding-bottom: 50px;
+}
+
+.bloque {
+  display: flex;
+  justify-content: space-around;
+  background-color:  #21306b;
+  border-radius: 15px;
+  color: #EDEDED;
+}
+
+.info {
+  flex: 1;
+  padding: 20px;
+}
+
+.img {
+  width: 30%;
+  background-color: #ffffff;
+  clip-path: polygon(0% 100%, 100% -250%, 100% 100%);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 15px 15px 0;
+}
+.img img {
+  width: 80%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.img.html img{
+  width: 60%;
+  padding-left: 70px;
+}
+
+.img.css img{
+  width: 50%;
+  padding-left: 80px;
+}
+
+.img.js img{
+  width: 110%;
+  padding-left: 15px;
+}
+
+.img.c3 img{
+  width: 80%;
+  padding-left: 45px;
+}
+
+.img.java img{
+  width: 65%;
+  padding-left: 60px;
+}
+
+.img.sql img{
+  width: 70%;
+  padding-left: 65px;
+}
+
+
+
+.bloque.html {
+ background-color: #ff3300;
+}
+
+.bloque.css {
+  background-color: #0059ff;
+}
+
+.bloque.js {
+  background-color: #fac000;
+}
+
+.bloque.c3 {
+  background-color: #7800af;
+}
+
+.bloque.java {
+  background-color: #ff0000;
+}
+
+.bloque.sql {
+  background-color: #756f6e;
+}
+
+.bloque:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,209 @@
+.header {
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+    padding-left: 2rem;
+    margin-right: -100px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.text h4,
+h5 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.text h5 {
+    font-size: 1rem;
+}
+
+nav {
+    margin-left: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar-solid {
+    background-color: #b6b6b6; /* Cambia el color sólido deseado */
+  }
+
+@media screen and (max-width: 550px) {
+    .Desktop {
+        display: none;
+    }
+
+    .NavCell {
+        display: flex;
+        width: 100%;
+    }
+
+    .NavCell .MenuHB {
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+        display: block;
+    }
+
+    .NavCell .MenuHB .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .NavCell .MenuHB .Menu {
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .NavCell .MenuHB .Menu .line {
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #ffffff;
+    }
+
+    .NavCell .MenuHB .Menu .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .NavCell .MenuHB .Menu .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .NavCell .MenuHB .Menu .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .NavCell .MenuHB input[type="checkbox"]:checked~.NavItems {
+        transform: translateX(0);
+    }
+
+    .NavCell .MenuHB input[type="checkbox"]:checked~.Menu .line1 {
+        transform: rotate(45deg);
+    }
+
+    .NavCell .MenuHB input[type="checkbox"]:checked~.Menu .line2 {
+        transform: scaleY(0);
+    }
+
+    .NavCell .MenuHB input[type="checkbox"]:checked~.Menu .line3 {
+        transform: rotate(-45deg);
+    }
+
+    .NavCell .MenuHB .NavItems {
+        padding-top: 120px;
+        height: 100vh;
+        width: 150%;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -50px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .NavCell .MenuHB .NavItems .Items li a:hover {
+        background-color: #111111;
+    }
+
+    .NavCell .MenuHB .NavItems .Items li.M {
+        list-style: none;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .NavCell .MenuHB .NavItems .Items li a {
+        color: #333333;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 15px;
+        transition: background-color 0.3s ease;
+    }
+}
+
+
+@media screen and (min-width: 550px) {
+    .NavCell {
+        display: none;
+    }
+
+    .Desktop {
+        margin-left: -350px;
+    }
+
+    .Desktop .Items {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .Desktop .Items li {
+        padding: 15px;
+        list-style-type: none;
+    }
+
+    .Desktop .Items li a {
+        color: #333333;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 7px;
+        border-radius: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .Desktop .Items li a:hover {
+        background-color: #a5a5a5;
+    }
+}
+
+
+.languageIcon img {
+    width: 60px;
+    height: auto;
+    margin-right: 3rem;
+}
